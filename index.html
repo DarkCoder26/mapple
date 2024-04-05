@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappls</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img id="logoImage" src="./assets/logo-m.png">
+        <div id="navLinks">
+            <ul>
+                <li><a href="">Products</a></li>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">Consumer</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Company</a></li>
+            </ul>
+        </div>
+        <div id="navButtons">
+            <div class="roundButton">
+
+            </div>
+            <div class="roundButton">
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="textBody">
+        <div id="text">
+            India’s leading provider of digital <span id="map" class="jsText"></span>, <span id="geospatial"
+                class="jsText"></span> software and <span id="iot" class="jsText"></span> technologies
+        </div>
+    </div>
+
+    <div id="sponserBox">
+        <div class="sponserContent">
+            <div id="sponserText">
+                The names you trust, trust MapmyIndia.<br> Serving industry leaders across big tech, corporates, automotive, and government authorities.
+            </div>
+            <div id="sponserImages" class="grid-container">
+                <div class="grid-item"><img src="./assets/isro 1.png" alt="Image 2"></div>
+                <div class="grid-item"><img src="./assets/isro 1.png" alt="Image 3"></div>
+                <div class="grid-item"><img src="./assets/isro 1.png" alt="Image 4"></div>
+                <div class="grid-item"><img src="./assets/isro 1.png" alt="Image 5"></div>
+                <div class="grid-item"><img src="./assets/isro 1.png" alt="Image 6"></div>
+                <div class="grid-item"><img src="./assets/isro 1.png" alt="Image 1"></div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <!-- Element to contain animated typing -->
+    <span id="element"></span>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#map', {
+            strings: ['maps'],
+            typeSpeed: 50,
+        });
+        setTimeout(function () {
+            var typed = new Typed('#geospatial', {
+                strings: ['geospatial',],
+                typeSpeed: 50,
+            });
+        }, 1000);
+        setTimeout(function () {
+            var typed = new Typed('#iot', {
+                strings: ['location based iot'],
+                typeSpeed: 50,
+            });
+        }, 2000);
+
+
+    </script>
+</body>
+
+</html>
